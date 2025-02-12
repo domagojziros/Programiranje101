@@ -121,4 +121,17 @@ footer {
     }
 }
 
+.back-to-top {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#scrollToTop {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
 

@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (window.scrollY < window.innerHeight / 2) {
 
                 window.scrollTo({
-                    top: window.innerHeight, 
+                    top: window.innerHeight - 100, 
                     behavior: "smooth"
                 });
                 icon.classList.remove("fa-chevron-down");
@@ -34,4 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("scrollToTop").addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
 });

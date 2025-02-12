@@ -109,6 +109,37 @@ for i in range(1, 6):
     </section>
 
 
+    <div class="container mt-5">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="questions-tab" data-bs-toggle="tab" data-bs-target="#questions" type="button" role="tab">Pitanja</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tips-tab" data-bs-toggle="tab" data-bs-target="#tips" type="button" role="tab">Savjeti</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="extra-tasks-tab" data-bs-toggle="tab" data-bs-target="#extra-tasks" type="button" role="tab">Dodatni zadaci</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active p-3" id="questions" role="tabpanel">
+                <p><strong>Pitanje 1:</strong> Što je varijabla u programiranju?</p>
+                <p><strong>Pitanje 2:</strong> Kako definiramo funkciju u Pythonu?</p>
+            </div>
+            <div class="tab-pane fade p-3" id="tips" role="tabpanel">
+                <p>- Koristi jasne nazive varijabli i funkcija.</p>
+                <p>- Testiraj kod s različitim vrijednostima ulaza.</p>
+            </div>
+            <div class="tab-pane fade p-3" id="extra-tasks" role="tabpanel">
+                <p><strong>Zadatak:</strong> Napravite funkciju koja provjerava je li broj paran ili neparan.</p>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
     <nav class="pager">
         <ul>
             <li class="previous">
@@ -116,6 +147,12 @@ for i in range(1, 6):
             </li>
         </ul>
     </nav>
+
+    <div class="back-to-top">
+        <button id="scrollToTop" class="btn btn-primary">
+            <i class="fas fa-arrow-up"></i> Povratak na početak
+        </button>
+    </div>
 
     <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">

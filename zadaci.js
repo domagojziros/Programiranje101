@@ -16,3 +16,9 @@ window.onload = function() {
     editor4.setTheme("ace/theme/monokai");
     editor4.session.setMode("ace/mode/python");
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("scrollToTop").addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
